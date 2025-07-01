@@ -2,14 +2,13 @@
 name = "recsysproject"
 version = "0.1.0"
 description = "Add your description here"
-requires-python = ">=3.12"
+readme = "README.md"
+requires-python = ">=3.9"
 dependencies = [
-    "jupyter>=1.1.1",
-    "matplotlib>=3.10.3",
-    "notebook>=7.4.3",
-    "numpy>=2.3.0",
+    "matplotlib>=3.9.4",
+    "numpy>=2.0.2",
     "pandas>=2.3.0",
     "pip>=25.1.1",
-    "scikit-learn>=1.7.0",
-    "scipy>=1.15.3",
+    "setuptools>=80.9.0",
+    "surprise>=0.1",
 ]

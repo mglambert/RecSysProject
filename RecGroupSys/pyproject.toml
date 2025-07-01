@@ -1,0 +1,17 @@
+[project]
+name = "RecGroupSys"
+version = "0.0.0"
+authors = [
+  { name="Mathias Lambert", email="mglambert@uc.cl" },
+]
+description = "Functions to group recommendations"
+dependencies = [
+    "pip>=25.1.1",
+]
+
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+where = ["."]

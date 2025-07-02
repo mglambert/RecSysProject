@@ -13,7 +13,7 @@
    2. Split train and test interactions or ratings. 
    3. Add more information to games, generate embeddings from descriptions and cover images. 
    4. Generate groups of users. 
-5. Consensus methods
+4. Consensus methods
    1. Write functions for all consensus methods discussed. 
       1. Plurality/majority voting
       2. Average
@@ -26,9 +26,12 @@
       9. Average without Misery
       10. Fairness
       11. Most respected person (or Dictatorship)
-6. Baselines
+5. Models
    1. Individual recommendations methods
       1. SVDpp
       2. Random
       3. Most Popular
-   2. Proposed method 
+   2. Proposed method: XGBoost regressor based on user characterization and similarity with items.
+6. Poster 
+7. Extend results
+8. Paper

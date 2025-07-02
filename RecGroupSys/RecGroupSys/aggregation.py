@@ -93,7 +93,7 @@ class VotingMethods:
         return df[items_to_keep].mean(axis=0)
 
     @staticmethod
-    def fairness(df: pd.DataFrame, user_order: list) -> list:
+    def fairness(df: pd.DataFrame, user_order=None) -> list:
         """
         Clasifica los ítems haciendo que los usuarios elijan por turnos.
         En caso de empate en la calificación de un usuario, se elige el
@@ -101,6 +101,8 @@ class VotingMethods:
         """
         available_items = df.columns.tolist()
         selection_order = []
+        if user_order is None:
+            user_order = df.index
         user_cycle = cycle(user_order)
 
         while available_items:
@@ -113,12 +115,12 @@ class VotingMethods:
         return selection_order
 
     @staticmethod
-    def most_respected_person(df: pd.DataFrame, user: str) -> pd.Series:
+    def most_respected_person(df: pd.DataFrame, user: str='') -> pd.Series:
         """
         Utiliza únicamente las calificaciones del individuo más respetado.
         """
         if user not in df.index:
-            raise ValueError(f"User '{user}' not found in DataFrame index.")
+            return df.iloc[0]
         return df.loc[user]
 
 

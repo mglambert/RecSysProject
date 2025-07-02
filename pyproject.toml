@@ -9,10 +9,12 @@ dependencies = [
     "matplotlib>=3.9.4",
     "notebook>=7.4.4",
     "numpy>=2.0.2",
+    "opentsne>=1.0.2",
     "pandas>=2.3.0",
     "pip>=25.1.1",
     "pytest>=8.4.1",
     "setuptools>=80.9.0",
     "surprise>=0.1",
     "tqdm>=4.67.1",
+    "xgboost>=2.1.4",
 ]

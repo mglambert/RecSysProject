@@ -15,5 +15,20 @@
    4. Generate groups of users. 
 5. Consensus methods
    1. Write functions for all consensus methods discussed. 
+      1. Plurality/majority voting
+      2. Average
+      3. Multiplicative
+      4. Borda count
+      5. Copeland score
+      6. Approval voting
+      7. Least Misery
+      8. Most pleasure
+      9. Average without Misery
+      10. Fairness
+      11. Most respected person (or Dictatorship)
 6. Baselines
    1. Individual recommendations methods
+      1. SVDpp
+      2. Random
+      3. Most Popular
+   2. Proposed method 

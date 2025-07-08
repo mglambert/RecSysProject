@@ -35,3 +35,18 @@
 6. Poster 
 7. Extend results
 8. Paper
+
+# 3. How to run
+
+1. Create uv venv, and make the library RecGroupSys. 
+2. Download data from https://www.kaggle.com/datasets/threnjen/board-games-database-from-boardgamegeek/data. 
+3. Run EDA:
+   1. Run EDA_games.ipynb
+   2. Run EDA_user.ipynb
+4. Run preprocessing::
+   1. Run preprocessing.ipynb
+   2. Run preprocessing2.ipynb
+   3. Run preprocessing3.ipynb
+5. Run baseline models: 
+   1. Run Basic_model.ipynb
+   2. Run Proposed_model.ipynb
